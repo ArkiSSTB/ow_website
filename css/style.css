@@ -1,0 +1,357 @@
+body{
+    margin: 0;
+    font-family: Raleway;
+    font-weight: 400;
+    background-color: #0B0B0B;
+    background-image: url(../img/BackgroundMainLines.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0; 
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  
+  .header{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .content-wrapper {
+    width: 1320px;
+    margin: 0 auto;
+  }
+
+  .top__links{
+    height: 30px;
+    width: auto;
+    background-color: #1a2940;
+    outline: 1px solid #667183;
+  }
+
+
+
+  .header-line {
+    display: flex;
+    align-items: center;
+    background-color: #203658;
+    margin-top: 20px;
+    height: 40px;
+
+    outline: 2px solid #667183;
+    justify-content: space-between;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 3px #182842;
+    margin-left: auto; /* Центрируем элемент */
+    margin-right: auto; /* Центрируем элемент */
+  }
+
+  .nav_lines{
+    width: 2px;
+    height: 28px;
+    background: linear-gradient(to bottom, #203658, #667183, #203658);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 5%;
+  }
+
+  .nav-item {
+    color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: linear-gradient(#f5fbff, #bfe6ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+  }
+  .nav-item:hover {
+    transform: scale(1.1);
+}
+  .nav-item-used {
+    color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: linear-gradient(#FFE98D, #E19F27);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px #FFE98D;
+    transition: transform 0.3s ease;
+  }
+  .nav-item-used:hover {
+    transform: scale(1.1);
+}
+
+  .ip_button .ip_button_a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #d49f3d;
+    border-radius: 3px;
+    height: 34px;
+    width: 100%; /* Используем 100% ширины родителя */
+    max-width: 180px;
+    background: linear-gradient(#5B92BA, #346196);
+    margin-right: 1.2rem;
+    box-shadow: inset 0 0 0 3px #1D3450;
+
+  }
+.ip_adress {
+  font-family: 'Alegreya SC', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: linear-gradient(#f5fbff, #bfe6ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+  .ip_button_a:hover {
+    background: linear-gradient(#6aa7d3, #4981c2);
+  }
+
+
+  .logo_container{
+    text-align: center;
+    display: block;
+  }
+  .ow_logo {
+    width: 100%;
+    max-width: 750px;
+    margin: 10% auto; /* Отступы зависят от ширины экрана */
+  }
+
+
+
+  .joinContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .join_button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid #d49f3d;
+    border-radius: 10px;
+    height: 53px;
+    width: 90%;
+    max-width: 342px;
+    background: linear-gradient(#5B92BA, #346196);
+    box-shadow: inset 0 0 0 3px #1D3450;
+  }
+  .join_button:hover {
+    background: linear-gradient(#6aa7d3, #4981c2);
+  }
+
+  .join_text {
+    font-family: 'Alegreya SC', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(#f5fbff, #bfe6ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+.features-container {
+  display: flex; /* Flexbox для выравнивания элементов */
+  justify-content: center; /* Центрирование элементов */
+  margin-top: 160px; /* Отступ сверху */
+}
+
+.feature{
+  padding: 31px; /* Внутренние отступы для каждого элемента */
+  margin: 0 60px; /* Отступы между элементами */
+  background-color: #1B1B1B;
+  border-radius: 27px;
+  outline: 3px dashed #333333;
+}
+
+.пообщаемся {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(#FFE98D, #E19F27);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.пообщаемсяИнфа{
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #B0B0B0;
+  width: 567px;
+  height: 184px;
+}
+
+.discord_button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Это выравнивает содержимое, если там есть текст */
+}
+.discord_button_join:hover {
+  background: linear-gradient(#6aa7d3, #4981c2);
+}
+.discord_button_join {
+  
+  background: linear-gradient(#5B92BA, #346196);
+  color: #FFFFFF;
+  width: 100%;
+  max-width: 375px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 24px; /* Добавляем отступ сверху */
+}
+
+.promo_container {
+  margin: 140px auto 50px auto;
+  display: flex;
+  justify-content: center;
+}
+.promo {
+  height: 320px;
+  width: 100%;
+  background-color: #181818;
+  border-radius: 12px;
+}
+
+
+.third_container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(#FFE98D, #E19F27);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.third_container h2 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #B3B3B3;
+}
+
+.news_container {
+  margin-top: 200px;
+}
+
+.news_header_text {
+  text-align: center;
+}
+
+.news_block {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news_image {
+  width: 100%;
+  max-width: 449px;
+  height: 252px;
+  background-color: #181818;
+  border-radius: 12px;
+  margin-top: 0;
+  transition: transform 0.3s ease;
+}
+.news_image:hover {
+  transform: scale(1.1);
+}
+
+.news_info{
+  padding-left: 40px;
+  width: 550px;
+  height: 262px;
+  margin-bottom: 50px;
+}
+.news_info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(#F5FBFF, #BFE6FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.news_info h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #B0B0B0;
+}
+
+.news_info h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #A8AEB1;
+}
+.blue-text {
+  color: #346196;
+}
+
+.allNews{
+  margin-top: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news_button{
+  position: absolute; /* Абсолютное позиционирование для кнопки */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 2px solid #d49f3d;
+  border-radius: 10px;
+  height: 53px;
+  width: 342px;
+  background: linear-gradient(#5B92BA, #346196);
+  margin: 0px; /* Отступы сверху, снизу и справа */
+  box-shadow: inset 0 0 0 3px #1D3450;
+}
+.news_button:hover {
+  background: linear-gradient(#6aa7d3, #4981c2);
+}
+.news_button_text{
+  font-family: Alegreya SC;
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(#f5fbff, #bfe6ff);
+  -webkit-background-clip: text; /* Клиппинг фона по тексту (для WebKit-браузеров) */
+  -webkit-text-fill-color: transparent; /* Заполнение текста прозрачным цветом (для WebKit-браузеров) */
+  background-clip: text; /* Клиппинг фона по тексту */
+  color: transparent; /* Заполнение текста прозрачным цветом */
+}
+

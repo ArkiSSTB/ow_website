@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+    font-family: Raleway;
+    font-weight: 400;
+    background-color: #0B0B0B;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  
+  .header{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .content-wrapper {
+    width: 1320px;
+    margin: 0 auto;
+  }
+
+  .top__links{
+    height: 30px;
+    width: auto;
+    background-color: #1a2940;
+    outline: 1px solid #667183;
+  }
+
+
+
+  .header-line {
+    display: flex;
+    align-items: center;
+    background-color: #203658;
+    margin-top: 20px;
+    height: 40px;
+
+    outline: 2px solid #667183;
+    justify-content: space-between;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 3px #182842;
+    margin-left: auto; /* Центрируем элемент */
+    margin-right: auto; /* Центрируем элемент */
+  }
+
+  .nav_lines{
+    width: 2px;
+    height: 28px;
+    background: linear-gradient(to bottom, #203658, #667183, #203658);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 5%;
+  }
+
+  .nav-item {
+    color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: linear-gradient(#f5fbff, #bfe6ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+  }
+  .nav-item:hover {
+    transform: scale(1.1);
+}
+  .nav-item-used {
+    color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: linear-gradient(#FFE98D, #E19F27);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px #FFE98D;
+    transition: transform 0.3s ease;
+  }
+  .nav-item-used:hover {
+    transform: scale(1.1);
+}
+
+  .ip_button .ip_button_a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #d49f3d;
+    border-radius: 3px;
+    height: 34px;
+    width: 100%; /* Используем 100% ширины родителя */
+    max-width: 180px;
+    background: linear-gradient(#5B92BA, #346196);
+    margin-right: 1.2rem;
+    box-shadow: inset 0 0 0 3px #1D3450;
+
+  }
+.ip_adress {
+  font-family: 'Alegreya SC', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: linear-gradient(#f5fbff, #bfe6ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+  .ip_button_a:hover {
+    background: linear-gradient(#6aa7d3, #4981c2);
+  }
+
+
+  .leftMenu{
+    background-color: #1B1B1B;
+    border-radius: 27px;
+    width: 330px;
+    height: 515px;
+  }
+
+  .infoContainer{
+    display: flex;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+  .avatar{
+    width: 80px;
+    height: 80px;
+    background-color: #4B4B4B;
+    border-radius: 7px;
+  }
+
+  .playerInfoContainer{
+    margin-left: 23px;
+    color: white;
+  }
+
+.groups{
+  margin-top: 8px;
+  display: flex;
+}
+.group{
+  background-color: #262626;
+  font-size: 10px;
+  padding: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-radius: 7px;
+  margin-right: 8px;
+}
+
+.container{
+  display: flex;
+  margin-top: 100px;
+  
+}
+
+.list{
+  margin-left: 30px;
+}
+.section{
+  font-size: 16px;
+  color: white;
+  margin-top: 18px;
+  background-color: #262626;
+  padding-left: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 210px;
+  border-radius: 7px;
+  transition: transform 0.3s ease;
+}
+
+.section:hover{
+  transform: scale(1.1);
+  background-color: #313131;
+}
+
+.profileTop{
+  display: flex;
+  background-color: #1B1B1B;
+  width: 929px;
+  height: 299px;
+  margin-left: 61px;
+  border-radius: 27px;
+}
+.profileAvatar{
+  background-color: #4B4B4B;
+  width: 233px;
+  height: 233px;
+  border-radius: 7px;
+  margin-top: 33px;
+  margin-left: 33px;
+  
+}
+.profileName{
+  display: flex;
+  font-size: 48px;
+  color: white;
+  font-weight: 700;
+  margin-top: 33px;
+  align-items: center;
+}
+.nameContainer{
+  margin-left: 33px;
+  color: white;
+  font-size: 32px;
+}
+.profileNameRank{
+  font-size: 16px;
+  margin-left: 20px;
+  background-color: #E19F27;
+  padding: 4px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 7px;
+}
+
+.rightContainer{
+  margin-top: 90px;
+  margin-left: 114px;
+}
+
+.buttonsFriend{
+  display: flex;
+}
+.addFriend{
+  color: #1B1B1B;
+  font-size: 16px;
+  background-color: #CBCBCB;
+  padding: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 7px;
+  font-weight: 700;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+.addFriend:hover {
+  transform: scale(1.1);
+}
+
+.sms{
+  color: white;
+  font-size: 16px;
+  background-color: #262626;
+  padding: 9px;
+  border-radius: 7px;
+  font-weight: 700;
+  margin-left: 11px;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+.sms:hover {
+  transform: scale(1.1);
+}
+
+.profileBottom{
+  display: flex;
+  background-color: #1B1B1B;
+  width: 929px;
+  height: 200px;
+  margin-left: 61px;
+  border-radius: 27px;
+  margin-top: 26px;
+}
