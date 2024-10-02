@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аутентификация</title>
+</head>
+<body>
+    <h1>Получить пароль</h1>
+    <button id="generatePassword">Сгенерировать пароль</button>
+    <p id="passwordDisplay"></p>
+    <input type="text" id="inputPassword" placeholder="Введите пароль">
+    <button id="checkPassword">Проверить пароль</button>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('generatePassword').onclick = async () => {
+            const response = await fetch('http://localhost:3000/api/generate_password', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            const data = await response.json();
+            document.getElementById('passwordDisplay').innerText = `Сгенерированный пароль: ${data.password}`;
+        };
+
+        document.getElementById('checkPassword').onclick = async () => {
+            const password = document.getElementById('inputPassword').value;
+            const response = await fetch('http://localhost:3000/api/check_password', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ password })
+            });
+            const result = await response.json();
+            if (result.success) {
+                document.getElementById('result').innerText = "Авторизация успешна!";
+            } else {
+                document.getElementById('result').innerText = "Неверный или использованный пароль.";
+            }
+        };
+    </script>
+</body>
+</html>
