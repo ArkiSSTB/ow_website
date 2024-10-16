@@ -1,46 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аутентификация</title>
+    <title>Регистрация | Мой Origin</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/auth.css">
 </head>
 <body>
-    <h1>Получить пароль</h1>
-    <button id="generatePassword">Сгенерировать пароль</button>
-    <p id="passwordDisplay"></p>
-    <input type="text" id="inputPassword" placeholder="Введите пароль">
-    <button id="checkPassword">Проверить пароль</button>
-    <p id="result"></p>
-
-    <script>
-        document.getElementById('generatePassword').onclick = async () => {
-            const response = await fetch('http://localhost:3000/api/generate_password', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-            const data = await response.json();
-            document.getElementById('passwordDisplay').innerText = `Сгенерированный пароль: ${data.password}`;
-        };
-
-        document.getElementById('checkPassword').onclick = async () => {
-            const password = document.getElementById('inputPassword').value;
-            const response = await fetch('http://localhost:3000/api/check_password', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ password })
-            });
-            const result = await response.json();
-            if (result.success) {
-                document.getElementById('result').innerText = "Авторизация успешна!";
-            } else {
-                document.getElementById('result').innerText = "Неверный или использованный пароль.";
-            }
-        };
-    </script>
-</body>
-</html>
+    <div class="top__links"></div>
+    <div class="header">
+        <div class="content-wrapper">
+            <div class="first_container">
+                <div class="header-line">
+                    <div class="nav">
+                        <a class="nav-item" href="index.html">🏠</a>
+                        <div class="nav_lines"></div>
+                        <a class="nav-item" href="shop.html">Магазин</a>
+                        <div class="nav_lines"></div>
+                        <a class="nav-item" href=" ">Гайды</a>
+                        <div class="nav_lines"></div>
+                        <a class="nav-item" href="profileOrigin.html">Мой Origin</a>
+                        <div class="nav_lines"></div>
+                        <a class="nav-item-used" href="auth.html">auth</a>
+                    </div>
+                    <div class="ip_button">
+                        <a href="#" class="ip_button_a">
+                            <span class="ip_adress">originworld.art</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
